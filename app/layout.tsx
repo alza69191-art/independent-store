@@ -1,0 +1,1 @@
+import type { Metadata } from "next"; import "./globals.css"; export const metadata: Metadata={title:"متجر مستقل | Independent Store",description:"متجر إلكتروني مستقل لإدارة وبيع المنتجات"}; export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="ar" dir="rtl"><body>{children}</body></html>}
