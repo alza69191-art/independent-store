@@ -1,0 +1,1 @@
+import {NextResponse} from "next/server";import {ensureSchema,db} from "@/lib/db";export const runtime="nodejs";export async function GET(){try{await ensureSchema();await db().query("SELECT 1");return NextResponse.json({status:"ok",database:"connected"})}catch{return NextResponse.json({status:"ok",database:"not_configured"})}}
